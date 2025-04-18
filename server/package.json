@@ -4,7 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun --hot run server.ts"
+    "start:dev": "bun --hot run server.ts",
+    "start:prod": "bun run server.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
@@ -15,8 +16,10 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@prisma/client": "^6.6.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
+    "prisma": "^6.6.0",
     "yup": "^1.6.1"
   }
 }
