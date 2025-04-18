@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  aws-db:
+    image: postgres:17.4-alpine3.21
+    container_name: aws-db
+    ports:
+      - "5432:5432"
+    volumes:
+      - aws-data:/var/lib/postgres/data
+    environment:
+      - POSTGRES_DB=aws
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin123
+
+volumes:
+  aws-data:
