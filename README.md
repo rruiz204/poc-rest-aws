@@ -1,1 +1,1 @@
-### Loop MVP | Habit Tracker
+### Looop MVP | Habit Tracker
